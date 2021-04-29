@@ -26,7 +26,7 @@ To support the reproducibility of these analyses, this tutorial employs literate
 
 ### Software:
 * Register a GitHub Account: [https://github.com](https://github.com)    
-* Install [Git for Windows v2.23.1 64-bit](https://git-scm.com/download/win) also known as msysgit or “Git Bash”, to get Git in addition to some other useful tools, such as the Bash shell. Yes, all those names are totally confusing, but you might encounter them elsewhere and I want you to be well-informed.
+* Install [Git for Windows v2.31.1 64-bit](https://git-scm.com/download/win) also known as msysgit or “Git Bash”, to get Git in addition to some other useful tools, such as the Bash shell. Yes, all those names are totally confusing, but you might encounter them elsewhere and I want you to be well-informed.
   * NOTE: When asked about “Adjusting your PATH environment”, make sure to select “Git from the command line and also from 3rd-party software”. Otherwise, we believe it is good to accept the defaults.
   * Note that RStudio for Windows prefers for Git to be installed below C:/Program Files and this appears to be the default. This implies, for example, that the Git executable on my Windows system is found at C:/Program Files/Git/bin/git.exe. Unless you have specific reasons to otherwise, follow this convention.
  
