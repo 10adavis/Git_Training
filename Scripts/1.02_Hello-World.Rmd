@@ -1,0 +1,43 @@
+---
+title: "1.02_Hello-World"
+author:
+- Andrew Davis, PhD, Unilever Human Biology
+date: "`r format(Sys.time(), '%d %B %Y')`"
+output:
+  rmarkdown::html_document:
+    toc: TRUE
+---
+
+# Install/Load dependencies
+```{r, echo=TRUE, message=FALSE, Loading_Dependencies_1}
+# Install cran packages
+list.of.packages <- c("readxl")
+new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
+if(length(new.packages)) install.packages(new.packages)
+
+# Install Bioconductor packages
+# bioc.packages <- c("")
+# new.bioc.packages <- bioc.packages[!(bioc.packages %in% installed.packages()[,"Package"])]
+# if(length(new.bioc.packages)) BiocManager::install(new.bioc.packages)
+
+# Load dependencies:
+library(readxl)
+```
+
+# Read-in data:
+```{r read_excel}
+helloworld<-read_xlsx("../Input/Hello_World.xlsx",sheet=1,col_names =FALSE)
+```
+
+## Write to a .txt file
+```{r write_csv}
+write.table(helloworld,"../Results/Hello_World.txt",col.names = FALSE,row.names=FALSE)
+```
+
+
+### Session information
+```{r session_info_2}
+sessionInfo()
+```
+
+This document was processed on: `r Sys.Date()`.
