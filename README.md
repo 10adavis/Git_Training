@@ -40,11 +40,12 @@ git config --global --list
 
 During our meeting I will (likely) give a brief demo using Sourcetree and RStudio, which is nicely integrated with git, and is the primary interface I personally use.
 
-#### To run R/RStudio locally: 
+## Hands On Demo:
+### To run R/RStudio locally: 
 * Install [R version 4.0.0 or above](https://www.r-project.org/)
 * Install [RStudio Desktop 1.2 or above](https://rstudio.com/products/rstudio/)
 
-## Running the test analysis:
+### Running the test analysis:
 This tutorial includes a very simple analysis, which reads in an excel spreadsheet and outputs the contents of that spreadsheet to a .txt file. 
 
 After cloning this repo, the first required step is to install the R dependencies required to run the analysis (written in the .Rmd files in R_scripts). To do so, execute the following command in your R environment.
@@ -91,13 +92,13 @@ sessionInfo()
 #> [5] LC_TIME=English_United States.1252    
 #> 
 #> attached base packages:
-#> [1] stats     graphics  grDevices utils     datasets  methods   base     
+#> [1] stats     graphics  grDevices datasets  utils     methods   base     
 #> 
 #> other attached packages:
-#> [1] rmarkdown_2.7 here_1.0.1    readxl_1.3.1 
+#> [1] readxl_1.3.1  rmarkdown_2.7 here_1.0.1   
 #> 
 #> loaded via a namespace (and not attached):
-#>  [1] Rcpp_1.0.6        knitr_1.31        magrittr_2.0.1   
+#>  [1] Rcpp_1.0.6        knitr_1.33        magrittr_2.0.1   
 #>  [4] rlang_0.4.10      fansi_0.4.2       stringr_1.4.0    
 #>  [7] tools_4.0.4       xfun_0.22         tinytex_0.31     
 #> [10] utf8_1.2.1        cli_2.5.0         htmltools_0.5.1.1

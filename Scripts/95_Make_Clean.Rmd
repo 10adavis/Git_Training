@@ -10,16 +10,6 @@ output:
 
 # Install/Load dependencies
 ```{r, echo=TRUE, message=FALSE, Loading_Dependencies}
-# Install cran packages
-list.of.packages <- c("here")
-new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
-if(length(new.packages)) install.packages(new.packages)
-
-# Install Bioconductor packages
-# bioc.packages <- c("Biobase")
-# new.bioc.packages <- bioc.packages[!(bioc.packages %in% installed.packages()[,"Package"])]
-# if(length(new.bioc.packages)) BiocManager::install(new.bioc.packages)
-
 # Load dependencies:
 library(here)
 ```

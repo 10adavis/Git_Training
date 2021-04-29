@@ -166,21 +166,6 @@ pre code {
 
 </div>
 
-<div id="TOC">
-<ul>
-<li><a href="#reproducible-code-using-git-and-github">Reproducible code using git and GitHub</a>
-<ul>
-<li><a href="#prerequisites">Prerequisites:</a>
-<ul>
-<li><a href="#hardware">Hardware:</a></li>
-<li><a href="#software">Software:</a></li>
-</ul></li>
-<li><a href="#running-the-test-analysis">Running the test analysis:</a></li>
-<li><a href="#background-slides">Background slides:</a></li>
-<li><a href="#session-information">Session information</a></li>
-</ul></li>
-</ul>
-</div>
 
 <div id="reproducible-code-using-git-and-github" class="section level1">
 <h1>Reproducible code using git and GitHub</h1>
@@ -223,17 +208,19 @@ git config --global --list</code></pre>
 </ul>
 <p>During our meeting I will (likely) give a brief demo using Sourcetree and RStudio, which is nicely integrated with git, and is the primary interface I personally use.</p>
 </div>
-<div id="to-run-rrstudio-locally" class="section level4">
-<h4>To run R/RStudio locally:</h4>
+</div>
+</div>
+<div id="hands-on-demo" class="section level2">
+<h2>Hands On Demo:</h2>
+<div id="to-run-rrstudio-locally" class="section level3">
+<h3>To run R/RStudio locally:</h3>
 <ul>
 <li>Install <a href="https://www.r-project.org/">R version 4.0.0 or above</a></li>
 <li>Install <a href="https://rstudio.com/products/rstudio/">RStudio Desktop 1.2 or above</a></li>
 </ul>
 </div>
-</div>
-</div>
-<div id="running-the-test-analysis" class="section level2">
-<h2>Running the test analysis:</h2>
+<div id="running-the-test-analysis" class="section level3">
+<h3>Running the test analysis:</h3>
 <p>This tutorial includes a very simple analysis, which reads in an excel spreadsheet and outputs the contents of that spreadsheet to a .txt file.</p>
 <p>After cloning this repo, the first required step is to install the R dependencies required to run the analysis (written in the .Rmd files in R_scripts). To do so, execute the following command in your R environment.</p>
 <pre class="r"><code>renv::restore()</code></pre>
@@ -247,6 +234,7 @@ git config --global --list</code></pre>
 <h4>Output:</h4>
 <p>The resulting output files were saved to the <a href="Results">Results</a> folder in this repository. Note that the contents of this folder will not be tracked by the remote repository by default (these files tend to be large to store on GitHub). To track the contents of this folder, one must remove the line “/Results/” from the <a href=".gitignore">.gitignore</a> file.</p>
 <pre><code>#&gt; [1] &quot;1.02_Hello-World.html&quot; &quot;Hello_World.txt&quot;</code></pre>
+</div>
 </div>
 </div>
 <div id="background-slides" class="section level2">
@@ -272,13 +260,13 @@ git config --global --list</code></pre>
 #&gt; [5] LC_TIME=English_United States.1252    
 #&gt; 
 #&gt; attached base packages:
-#&gt; [1] stats     graphics  grDevices utils     datasets  methods   base     
+#&gt; [1] stats     graphics  grDevices datasets  utils     methods   base     
 #&gt; 
 #&gt; other attached packages:
-#&gt; [1] rmarkdown_2.7 here_1.0.1    readxl_1.3.1 
+#&gt; [1] readxl_1.3.1  rmarkdown_2.7 here_1.0.1   
 #&gt; 
 #&gt; loaded via a namespace (and not attached):
-#&gt;  [1] Rcpp_1.0.6        knitr_1.31        magrittr_2.0.1   
+#&gt;  [1] Rcpp_1.0.6        knitr_1.33        magrittr_2.0.1   
 #&gt;  [4] rlang_0.4.10      fansi_0.4.2       stringr_1.4.0    
 #&gt;  [7] tools_4.0.4       xfun_0.22         tinytex_0.31     
 #&gt; [10] utf8_1.2.1        cli_2.5.0         htmltools_0.5.1.1
