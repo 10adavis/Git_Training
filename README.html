@@ -169,7 +169,7 @@ pre code {
 
 <div id="reproducible-code-using-git-and-github" class="section level1">
 <h1>Reproducible code using git and GitHub</h1>
-<p>This tutorial covers version control with git. The tutorial is meant to be hands-on, so the target audience should have access to a PC (preferably Windows) with an internet connection. One must also install Git for Windows v2.31.1, and an active R/R Studio environment (either locally, or on DataLab).</p>
+<p>This tutorial covers version control with git. The tutorial is meant to be hands-on, so the target audience should have access to a PC (preferably Windows) with an internet connection. One must also install Git for Windows v2.31.1, and an active R/R Studio environment.</p>
 <p>We will begin with a brief introduction to the concepts of git and then move on to some hands-on learning (no prior experience needed). At the end of the meeting, you will know how to create a repository, commit changes, and push/pull changes from a remote repository.</p>
 <p>To support the reproducibility of these analyses, this tutorial employs literate programming using <a href="https://rmarkdown.rstudio.com/">Rmarkdown(Rmd)</a> and full R package dependency management using the <a href="https://rstudio.github.io/renv/articles/renv.html">renv</a> package.</p>
 <div id="prerequisites" class="section level2">
@@ -233,7 +233,11 @@ git config --global --list</code></pre>
 <div id="output" class="section level4">
 <h4>Output:</h4>
 <p>The resulting output files were saved to the <a href="Results">Results</a> folder in this repository. Note that the contents of this folder will not be tracked by the remote repository by default (these files tend to be large to store on GitHub). To track the contents of this folder, one must remove the line “/Results/” from the <a href=".gitignore">.gitignore</a> file.</p>
+<<<<<<< HEAD
 <pre><code>#&gt; [1] &quot;1.02_Hello-World.html&quot; &quot;2.02_PCA-example.html&quot; &quot;Hello_World.txt&quot;</code></pre>
+=======
+<pre><code>#&gt; character(0)</code></pre>
+>>>>>>> 17393909c5e08a7bbc16e70b0899f969008dbeb0
 </div>
 </div>
 </div>
@@ -263,6 +267,7 @@ git config --global --list</code></pre>
 #&gt; [1] stats     graphics  grDevices datasets  utils     methods   base     
 #&gt; 
 #&gt; other attached packages:
+<<<<<<< HEAD
 #&gt; [1] readxl_1.3.1     rmarkdown_2.7    here_1.0.1       ggfortify_0.4.11
 #&gt; [5] ggplot2_3.3.3    devtools_2.4.0   usethis_2.0.1   
 #&gt; 
@@ -287,6 +292,16 @@ git config --global --list</code></pre>
 #&gt; [52] purrr_0.3.4       processx_3.5.1    pkgload_1.2.1    
 #&gt; [55] fastmap_1.1.0     yaml_2.2.1        colorspace_2.0-0 
 #&gt; [58] sessioninfo_1.1.1 memoise_2.0.0     knitr_1.33</code></pre>
+=======
+#&gt; [1] rmarkdown_2.7 here_1.0.1   
+#&gt; 
+#&gt; loaded via a namespace (and not attached):
+#&gt;  [1] compiler_4.0.4    magrittr_2.0.1    rprojroot_2.0.2  
+#&gt;  [4] htmltools_0.5.1.1 tools_4.0.4       yaml_2.2.1       
+#&gt;  [7] stringi_1.5.3     knitr_1.33        stringr_1.4.0    
+#&gt; [10] xfun_0.22         digest_0.6.27     rlang_0.4.10     
+#&gt; [13] renv_0.13.2       evaluate_0.14</code></pre>
+>>>>>>> 17393909c5e08a7bbc16e70b0899f969008dbeb0
 <p>This document was processed on: 2021-04-29.</p>
 </div>
 </div>

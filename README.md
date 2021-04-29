@@ -6,7 +6,7 @@ output: github_document
 
 # Reproducible code using git and GitHub
 
-This tutorial covers version control with git. The tutorial is meant to be hands-on, so the target audience should have access to a PC (preferably Windows) with an internet connection. One must also install Git for Windows v2.31.1, and an active R/R Studio environment (either locally, or on DataLab).
+This tutorial covers version control with git. The tutorial is meant to be hands-on, so the target audience should have access to a PC (preferably Windows) with an internet connection. One must also install Git for Windows v2.31.1, and an active R/R Studio environment.
 
 We will begin with a brief introduction to the concepts of git and then move on to some hands-on learning (no prior experience needed). At the end of the meeting, you will know how to create a repository, commit changes, and push/pull changes from a remote repository. 
 
@@ -67,7 +67,11 @@ The resulting output files were saved to the [Results](Results) folder in this r
 
 
 ```
+<<<<<<< HEAD
 #> [1] "1.02_Hello-World.html" "2.02_PCA-example.html" "Hello_World.txt"
+=======
+#> character(0)
+>>>>>>> 17393909c5e08a7bbc16e70b0899f969008dbeb0
 ```
 
 ## Background slides:  
@@ -95,6 +99,7 @@ sessionInfo()
 #> [1] stats     graphics  grDevices datasets  utils     methods   base     
 #> 
 #> other attached packages:
+<<<<<<< HEAD
 #> [1] readxl_1.3.1     rmarkdown_2.7    here_1.0.1       ggfortify_0.4.11
 #> [5] ggplot2_3.3.3    devtools_2.4.0   usethis_2.0.1   
 #> 
@@ -119,6 +124,16 @@ sessionInfo()
 #> [52] purrr_0.3.4       processx_3.5.1    pkgload_1.2.1    
 #> [55] fastmap_1.1.0     yaml_2.2.1        colorspace_2.0-0 
 #> [58] sessioninfo_1.1.1 memoise_2.0.0     knitr_1.33
+=======
+#> [1] rmarkdown_2.7 here_1.0.1   
+#> 
+#> loaded via a namespace (and not attached):
+#>  [1] compiler_4.0.4    magrittr_2.0.1    rprojroot_2.0.2  
+#>  [4] htmltools_0.5.1.1 tools_4.0.4       yaml_2.2.1       
+#>  [7] stringi_1.5.3     knitr_1.33        stringr_1.4.0    
+#> [10] xfun_0.22         digest_0.6.27     rlang_0.4.10     
+#> [13] renv_0.13.2       evaluate_0.14
+>>>>>>> 17393909c5e08a7bbc16e70b0899f969008dbeb0
 ```
 
 This document was processed on: 2021-04-29.

@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
 
 # Reproducible code using git and GitHub
 
-This tutorial covers version control with git. The tutorial is meant to be hands-on, so the target audience should have access to a PC (preferably Windows) with an internet connection. One must also install Git for Windows v2.31.1, and an active R/R Studio environment (either locally, or on DataLab).
+This tutorial covers version control with git. The tutorial is meant to be hands-on, so the target audience should have access to a PC (preferably Windows) with an internet connection. One must also install Git for Windows v2.31.1, and an active R/R Studio environment.
 
 We will begin with a brief introduction to the concepts of git and then move on to some hands-on learning (no prior experience needed). At the end of the meeting, you will know how to create a repository, commit changes, and push/pull changes from a remote repository. 
 
