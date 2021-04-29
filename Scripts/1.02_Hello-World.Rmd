@@ -24,9 +24,8 @@ helloworld<-read_xlsx("../Input/Hello_World.xlsx",sheet=1,col_names =FALSE)
 write.table(helloworld,"../Results/Hello_World.txt",col.names = FALSE,row.names=FALSE)
 ```
 
-
 ### Session information
-```{r session_info_2}
+```{r session_info_102}
 sessionInfo()
 ```
 

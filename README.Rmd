@@ -52,7 +52,7 @@ During our meeting I will (likely) give a brief demo using Sourcetree and RStudi
 * Install [RStudio Desktop 1.2 or above](https://rstudio.com/products/rstudio/)
 
 ### Running the test analysis:
-This tutorial includes a very simple analysis, which reads in an excel spreadsheet and outputs the contents of that spreadsheet to a .txt file. 
+This tutorial includes a very simple analysis, executed in 2 .Rmd scripts. In [1.02_Hello-World.Rmd](Scripts/1.02_Hello-World.Rmd)  which reads in an excel spreadsheet and outputs the contents of that spreadsheet to a .txt file. In [2.02_PCA-example.Rmd](Scripts/2.02_PCA-example.Rmd), we run a simple PCA analysis of the mtcars dataset. 
 
 After cloning this repo, the first required step is to install the R dependencies required to run the analysis (written in the .Rmd files in R_scripts). To do so, execute the following command in your R environment.
 

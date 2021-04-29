@@ -46,7 +46,7 @@ During our meeting I will (likely) give a brief demo using Sourcetree and RStudi
 * Install [RStudio Desktop 1.2 or above](https://rstudio.com/products/rstudio/)
 
 ### Running the test analysis:
-This tutorial includes a very simple analysis, which reads in an excel spreadsheet and outputs the contents of that spreadsheet to a .txt file. 
+This tutorial includes a very simple analysis, executed in 2 .Rmd scripts. In [1.02_Hello-World.Rmd](Scripts/1.02_Hello-World.Rmd)  which reads in an excel spreadsheet and outputs the contents of that spreadsheet to a .txt file. In [2.02_PCA-example.Rmd](Scripts/2.02_PCA-example.Rmd), we run a simple PCA analysis of the mtcars dataset. 
 
 After cloning this repo, the first required step is to install the R dependencies required to run the analysis (written in the .Rmd files in R_scripts). To do so, execute the following command in your R environment.
 
@@ -67,7 +67,7 @@ The resulting output files were saved to the [Results](Results) folder in this r
 
 
 ```
-#> [1] "1.02_Hello-World.html" "Hello_World.txt"
+#> [1] "1.02_Hello-World.html" "2.02_PCA-example.html" "Hello_World.txt"
 ```
 
 ## Background slides:  
@@ -95,18 +95,30 @@ sessionInfo()
 #> [1] stats     graphics  grDevices datasets  utils     methods   base     
 #> 
 #> other attached packages:
-#> [1] readxl_1.3.1  rmarkdown_2.7 here_1.0.1   
+#> [1] readxl_1.3.1     rmarkdown_2.7    here_1.0.1       ggfortify_0.4.11
+#> [5] ggplot2_3.3.3    devtools_2.4.0   usethis_2.0.1   
 #> 
 #> loaded via a namespace (and not attached):
-#>  [1] Rcpp_1.0.6        knitr_1.33        magrittr_2.0.1   
-#>  [4] rlang_0.4.10      fansi_0.4.2       stringr_1.4.0    
-#>  [7] tools_4.0.4       xfun_0.22         tinytex_0.31     
-#> [10] utf8_1.2.1        cli_2.5.0         htmltools_0.5.1.1
-#> [13] ellipsis_0.3.2    yaml_2.2.1        rprojroot_2.0.2  
-#> [16] digest_0.6.27     tibble_3.1.1      lifecycle_1.0.0  
-#> [19] crayon_1.4.1      vctrs_0.3.8       evaluate_0.14    
-#> [22] stringi_1.5.3     compiler_4.0.4    pillar_1.6.0     
-#> [25] cellranger_1.1.0  renv_0.13.2       pkgconfig_2.0.3
+#>  [1] Rcpp_1.0.6        tidyr_1.1.3       prettyunits_1.1.1
+#>  [4] ps_1.6.0          rprojroot_2.0.2   digest_0.6.27    
+#>  [7] utf8_1.2.1        R6_2.5.0          cellranger_1.1.0 
+#> [10] evaluate_0.14     highr_0.9         pillar_1.6.0     
+#> [13] rlang_0.4.10      curl_4.3          rstudioapi_0.13  
+#> [16] callr_3.7.0       desc_1.3.0        labeling_0.4.2   
+#> [19] stringr_1.4.0     munsell_0.5.0     tinytex_0.31     
+#> [22] compiler_4.0.4    xfun_0.22         pkgconfig_2.0.3  
+#> [25] pkgbuild_1.2.0    htmltools_0.5.1.1 tidyselect_1.1.0 
+#> [28] tibble_3.1.1      gridExtra_2.3     fansi_0.4.2      
+#> [31] crayon_1.4.1      dplyr_1.0.5       withr_2.4.2      
+#> [34] grid_4.0.4        gtable_0.3.0      lifecycle_1.0.0  
+#> [37] magrittr_2.0.1    scales_1.1.1      cli_2.5.0        
+#> [40] stringi_1.5.3     cachem_1.0.4      farver_2.1.0     
+#> [43] renv_0.13.2       fs_1.5.0          remotes_2.3.0    
+#> [46] testthat_3.0.2    ellipsis_0.3.2    generics_0.1.0   
+#> [49] vctrs_0.3.8       tools_4.0.4       glue_1.4.2       
+#> [52] purrr_0.3.4       processx_3.5.1    pkgload_1.2.1    
+#> [55] fastmap_1.1.0     yaml_2.2.1        colorspace_2.0-0 
+#> [58] sessioninfo_1.1.1 memoise_2.0.0     knitr_1.33
 ```
 
 This document was processed on: 2021-04-29.

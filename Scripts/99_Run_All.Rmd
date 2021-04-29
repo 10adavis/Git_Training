@@ -17,7 +17,7 @@ library(rmarkdown)
 
 ```{r Run_all, include=FALSE}
 files_in_r_to_run <- 
-  c("1.02_Hello-World.Rmd")
+  c("1.02_Hello-World.Rmd","2.02_PCA-example.Rmd")
 
 for(i1 in 1:length(files_in_r_to_run)){
   

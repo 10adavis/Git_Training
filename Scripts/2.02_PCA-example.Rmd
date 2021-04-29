@@ -1,0 +1,44 @@
+---
+title: "2.02_PCA-Example"
+author:
+- Andrew Davis, PhD, Unilever Human Biology
+date: "`r format(Sys.time(), '%d %B %Y')`"
+output:
+  rmarkdown::html_document:
+    toc: TRUE
+---
+
+## Objectives:
+
+This script presents a simple script for plotting a PCA of the mtcars dataset, which comes preloaded into R. This dataset consists of data on 32 models of car, taken from an American motoring magazine (1974 Motor Trend magazine). 
+
+## Install/Load dependencies
+```{r, echo=TRUE, message=FALSE, Loading_Dependencies_1}
+# Load dependencies:
+library(ggfortify)
+```
+
+## Perform Principal Component Analysis:
+```{r compute_pca}
+mtcars.pca <- prcomp(mtcars, center = TRUE,scale. = TRUE)
+summary(mtcars.pca)
+```
+
+## Plot PCA:
+```{r}
+autoplot(mtcars.pca, data = mtcars, colour = 'cyl')
+```
+
+## Plot PCA with labeled eigenvectors
+```{r}
+autoplot(mtcars.pca, data = mtcars, colour = 'cyl',
+         loadings = TRUE, loadings.colour = 'blue',
+         loadings.label = TRUE, loadings.label.size = 3)
+```
+
+### Session information
+```{r session_info_202}
+sessionInfo()
+```
+
+This document was processed on: `r Sys.Date()`.
