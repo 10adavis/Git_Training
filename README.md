@@ -69,7 +69,7 @@ The resulting output files were saved to the [Results](Results) folder in this r
 ```
 #> [1] "1.02_Hello-World.html"  "1.02_Hello-World.md"    "2.02_PCA-example.html" 
 #> [4] "2.02_PCA-example.md"    "2.02_PCA-example_files" "Hello_World.txt"       
-#> [7] "PCA_Eigenvectors.tiff"
+#> [7] "PCA_Eigenvectors.tiff"  "Results_Readme.txt"
 ```
 
 ## Background slides:  

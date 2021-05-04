@@ -8,38 +8,40 @@ output:
     toc: TRUE
 ---
 
-
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
  collapse = TRUE,
  comment = "#>",
- fig.path = "2.02_PCA-example_files/figure-html",
  out.width = "100%"
 )
 ```
 
 ## Objectives:
 
-This script presents a simple script for plotting a PCA of the mtcars dataset, which comes preloaded into R. This dataset consists of data on 32 models of car, taken from an American motoring magazine (1974 Motor Trend magazine). 
+This script presents a simple script for plotting a PCA of the mtcars dataset, which comes preloaded into R. This dataset consists of data on 32 models of car, taken from an American motoring magazine (1974 Motor Trend magazine).
 
 ## Install/Load dependencies
+
 ```{r, echo=TRUE, message=FALSE, Loading_Dependencies_1}
 # Load dependencies:
 library(ggfortify)
 ```
 
 ## Perform Principal Component Analysis:
+
 ```{r compute_pca}
 mtcars.pca <- prcomp(mtcars, center = TRUE,scale. = TRUE)
 summary(mtcars.pca)
 ```
 
 ## Plot PCA:
+
 ```{r}
 autoplot(mtcars.pca, data = mtcars, colour = 'cyl')
 ```
 
 ## Plot PCA with labeled eigenvectors
+
 ```{r}
 tiff("../Results/PCA_Eigenvectors.tiff")
 autoplot(mtcars.pca, data = mtcars, colour = 'cyl',
@@ -53,6 +55,7 @@ autoplot(mtcars.pca, data = mtcars, colour = 'cyl',
 ```
 
 ### Session information
+
 ```{r session_info_202}
 sessionInfo()
 ```
