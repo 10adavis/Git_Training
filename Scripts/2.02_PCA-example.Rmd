@@ -8,6 +8,16 @@ output:
     toc: TRUE
 ---
 
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+ collapse = TRUE,
+ comment = "#>",
+ fig.path = "2.02_PCA-example_files/figure-html",
+ out.width = "100%"
+)
+```
+
 ## Objectives:
 
 This script presents a simple script for plotting a PCA of the mtcars dataset, which comes preloaded into R. This dataset consists of data on 32 models of car, taken from an American motoring magazine (1974 Motor Trend magazine). 
