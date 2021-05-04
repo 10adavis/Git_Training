@@ -63,12 +63,13 @@ To run this analysis, first create/clean the results output folder by running th
 Running [99_Run_All.Rmd](R_scripts/99_Run_All.Rmd) will also render html files of each .Rmd file, which will be saved to the results folder, making useful reports of this analysis. Finally, this README.Rmd files will also be "knit" to an html file, as well as a markdown (.md) file, in the working directory of this repository. This markdown file makes for easy viewing on GitHub, and acts as the "home page" for this repo.
 
 #### Output:
-The resulting output files were saved to the [Results](Results) folder in this repository. Note that the contents of this folder will not be tracked by the remote repository by default (these files tend to be large to store on GitHub). To track the contents of this folder, one must remove the line "/Results/" from the [.gitignore](.gitignore) file.
+The resulting output files were saved to the [Results](Results) folder in this repository. 
 
 
 ```
-#> [1] "1.02_Hello-World.html" "2.02_PCA-example.html" "Hello_World.txt"      
-#> [4] "PCA_Eigenvectors.tiff"
+#> [1] "1.02_Hello-World.html"  "1.02_Hello-World.md"    "2.02_PCA-example.html" 
+#> [4] "2.02_PCA-example.md"    "2.02_PCA-example_files" "Hello_World.txt"       
+#> [7] "PCA_Eigenvectors.tiff"
 ```
 
 ## Background slides:  

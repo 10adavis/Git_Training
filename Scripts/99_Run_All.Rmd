@@ -23,7 +23,7 @@ for(i1 in 1:length(files_in_r_to_run)){
   
   rmarkdown::render(here("Scripts", files_in_r_to_run[i1]),
                     output_format = 
-                      html_document(html_preview = TRUE, toc = TRUE),
+                      html_document(html_preview = TRUE, toc = TRUE,keep_md=TRUE),
                     output_dir = here("Results"))
 }
 
