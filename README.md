@@ -67,7 +67,8 @@ The resulting output files were saved to the [Results](Results) folder in this r
 
 
 ```
-#> [1] "1.02_Hello-World.html" "2.02_PCA-example.html" "Hello_World.txt"
+#> [1] "1.02_Hello-World.html" "2.02_PCA-example.html" "Hello_World.txt"      
+#> [4] "PCA_Eigenvectors.tiff"
 ```
 
 ## Background slides:  
@@ -95,26 +96,22 @@ sessionInfo()
 #> [1] stats     graphics  grDevices datasets  utils     methods   base     
 #> 
 #> other attached packages:
-#> [1] ggfortify_0.4.11 ggplot2_3.3.3    readxl_1.3.1     rmarkdown_2.7   
-#> [5] here_1.0.1      
+#> [1] rmarkdown_2.7    ggfortify_0.4.11 ggplot2_3.3.3    here_1.0.1      
+#> [5] readxl_1.3.1    
 #> 
 #> loaded via a namespace (and not attached):
-#>  [1] Rcpp_1.0.6        highr_0.9         cellranger_1.1.0 
-#>  [4] pillar_1.6.0      compiler_4.0.4    tools_4.0.4      
-#>  [7] digest_0.6.27     evaluate_0.14     lifecycle_1.0.0  
-#> [10] tibble_3.1.1      gtable_0.3.0      pkgconfig_2.0.3  
-#> [13] rlang_0.4.10      yaml_2.2.1        xfun_0.22        
-#> [16] gridExtra_2.3     withr_2.4.2       stringr_1.4.0    
-#> [19] dplyr_1.0.5       knitr_1.33        generics_0.1.0   
-#> [22] vctrs_0.3.8       rprojroot_2.0.2   grid_4.0.4       
-#> [25] tidyselect_1.1.0  glue_1.4.2        R6_2.5.0         
-#> [28] fansi_0.4.2       farver_2.1.0      tidyr_1.1.3      
-#> [31] purrr_0.3.4       magrittr_2.0.1    scales_1.1.1     
-#> [34] ellipsis_0.3.2    htmltools_0.5.1.1 colorspace_2.0-0 
-#> [37] renv_0.13.2       labeling_0.4.2    utf8_1.2.1       
-#> [40] tinytex_0.31      stringi_1.5.3     munsell_0.5.0    
-#> [43] crayon_1.4.1
+#>  [1] Rcpp_1.0.6        highr_0.9         cellranger_1.1.0  pillar_1.6.0     
+#>  [5] compiler_4.0.4    tools_4.0.4       digest_0.6.27     evaluate_0.14    
+#>  [9] lifecycle_1.0.0   tibble_3.1.1      gtable_0.3.0      pkgconfig_2.0.3  
+#> [13] rlang_0.4.10      cli_2.5.0         yaml_2.2.1        xfun_0.22        
+#> [17] gridExtra_2.3     stringr_1.4.0     withr_2.4.2       dplyr_1.0.5      
+#> [21] knitr_1.33        generics_0.1.0    vctrs_0.3.8       rprojroot_2.0.2  
+#> [25] grid_4.0.4        tidyselect_1.1.0  glue_1.4.2        R6_2.5.0         
+#> [29] fansi_0.4.2       farver_2.1.0      tidyr_1.1.3       purrr_0.3.4      
+#> [33] magrittr_2.0.1    scales_1.1.1      ellipsis_0.3.2    htmltools_0.5.1.1
+#> [37] colorspace_2.0-0  renv_0.13.2       labeling_0.4.2    utf8_1.2.1       
+#> [41] stringi_1.5.3     munsell_0.5.0     crayon_1.4.1
 ```
 
-This document was processed on: 2021-04-29.
+This document was processed on: 2021-05-04.
 

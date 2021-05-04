@@ -31,6 +31,12 @@ autoplot(mtcars.pca, data = mtcars, colour = 'cyl')
 
 ## Plot PCA with labeled eigenvectors
 ```{r}
+tiff("../Results/PCA_Eigenvectors.tiff")
+autoplot(mtcars.pca, data = mtcars, colour = 'cyl',
+         loadings = TRUE, loadings.colour = 'blue',
+         loadings.label = TRUE, loadings.label.size = 3)
+dev.off()
+
 autoplot(mtcars.pca, data = mtcars, colour = 'cyl',
          loadings = TRUE, loadings.colour = 'blue',
          loadings.label = TRUE, loadings.label.size = 3)
