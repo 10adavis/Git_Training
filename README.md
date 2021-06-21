@@ -6,7 +6,7 @@ output: github_document
 
 # Reproducible code using git and GitHub
 
-This tutorial covers version control with git. The tutorial is meant to be hands-on, so the target audience should have access to a PC (preferably Windows) with an internet connection. One must also install Git for Windows v2.31.1, and an active R/R Studio environment.
+This tutorial covers version control with git. The tutorial is meant to be hands-on, so the target audience should have access to a PC (preferably Windows) with an internet connection. One must also install Git for Windows (v2.31.1 or higher), and an active R/R Studio environment.
 
 We will begin with a brief introduction to the concepts of git and then move on to some hands-on learning (no prior experience needed). At the end of the meeting, you will know how to create a repository, commit changes, and push/pull changes from a remote repository. 
 
@@ -21,7 +21,6 @@ To support the reproducibility of these analyses, this tutorial employs literate
 * Register a GitHub Account: [https://github.com](https://github.com)    
 * Install [Git for Windows v2.31.1 64-bit](https://git-scm.com/download/win) also known as msysgit or “Git Bash”, to get Git in addition to some other useful tools, such as the Bash shell. Yes, all those names are totally confusing, but you might encounter them elsewhere and I want you to be well-informed.
   * NOTE: When asked about “Adjusting your PATH environment”, make sure to select “Git from the command line and also from 3rd-party software”. Otherwise, we believe it is good to accept the defaults.
-  * Note that RStudio for Windows prefers for Git to be installed below C:/Program Files and this appears to be the default. This implies, for example, that the Git executable on my Windows system is found at C:/Program Files/Git/bin/git.exe. Unless you have specific reasons to otherwise, follow this convention.
  
 #### Configure git user info:
 * Introduce yourself to Git using Git Bash (included with Git for Windows). 
@@ -69,7 +68,7 @@ The resulting output files were saved to the [Results](Results) folder in this r
 ```
 #> [1] "1.02_Hello-World.html"  "1.02_Hello-World.md"    "2.02_PCA-example.html" 
 #> [4] "2.02_PCA-example.md"    "2.02_PCA-example_files" "Hello_World.txt"       
-#> [7] "PCA_Eigenvectors.tiff"  "Results_Readme.txt"
+#> [7] "PCA_Eigenvectors.tiff"
 ```
 
 ## Background slides:  
@@ -82,37 +81,35 @@ The resulting output files were saved to the [Results](Results) folder in this r
 sessionInfo()
 #> R version 4.0.4 (2021-02-15)
 #> Platform: x86_64-w64-mingw32/x64 (64-bit)
-#> Running under: Windows 10 x64 (build 19041)
+#> Running under: Windows 10 x64 (build 19042)
 #> 
 #> Matrix products: default
 #> 
 #> locale:
-#> [1] LC_COLLATE=English_United States.1252 
-#> [2] LC_CTYPE=English_United States.1252   
-#> [3] LC_MONETARY=English_United States.1252
-#> [4] LC_NUMERIC=C                          
+#> [1] LC_COLLATE=English_United States.1252  LC_CTYPE=English_United States.1252   
+#> [3] LC_MONETARY=English_United States.1252 LC_NUMERIC=C                          
 #> [5] LC_TIME=English_United States.1252    
 #> 
 #> attached base packages:
 #> [1] stats     graphics  grDevices datasets  utils     methods   base     
 #> 
 #> other attached packages:
-#> [1] rmarkdown_2.7    ggfortify_0.4.11 ggplot2_3.3.3    here_1.0.1      
-#> [5] readxl_1.3.1    
+#> [1] ggfortify_0.4.11 ggplot2_3.3.3    readxl_1.3.1     rmarkdown_2.7    here_1.0.1      
 #> 
 #> loaded via a namespace (and not attached):
 #>  [1] Rcpp_1.0.6        highr_0.9         cellranger_1.1.0  pillar_1.6.0     
 #>  [5] compiler_4.0.4    tools_4.0.4       digest_0.6.27     evaluate_0.14    
 #>  [9] lifecycle_1.0.0   tibble_3.1.1      gtable_0.3.0      pkgconfig_2.0.3  
-#> [13] rlang_0.4.10      cli_2.5.0         yaml_2.2.1        xfun_0.22        
-#> [17] gridExtra_2.3     stringr_1.4.0     withr_2.4.2       dplyr_1.0.5      
-#> [21] knitr_1.33        generics_0.1.0    vctrs_0.3.8       rprojroot_2.0.2  
-#> [25] grid_4.0.4        tidyselect_1.1.0  glue_1.4.2        R6_2.5.0         
-#> [29] fansi_0.4.2       farver_2.1.0      tidyr_1.1.3       purrr_0.3.4      
-#> [33] magrittr_2.0.1    scales_1.1.1      ellipsis_0.3.2    htmltools_0.5.1.1
-#> [37] colorspace_2.0-0  renv_0.13.2       labeling_0.4.2    utf8_1.2.1       
-#> [41] stringi_1.5.3     munsell_0.5.0     crayon_1.4.1
+#> [13] rlang_0.4.10      rstudioapi_0.13   cli_2.5.0         yaml_2.2.1       
+#> [17] xfun_0.22         gridExtra_2.3     withr_2.4.2       stringr_1.4.0    
+#> [21] dplyr_1.0.5       knitr_1.33        generics_0.1.0    vctrs_0.3.8      
+#> [25] rprojroot_2.0.2   grid_4.0.4        tidyselect_1.1.0  glue_1.4.2       
+#> [29] R6_2.5.0          fansi_0.4.2       farver_2.1.0      tidyr_1.1.3      
+#> [33] purrr_0.3.4       magrittr_2.0.1    scales_1.1.1      ellipsis_0.3.2   
+#> [37] htmltools_0.5.1.1 colorspace_2.0-0  renv_0.13.2       labeling_0.4.2   
+#> [41] utf8_1.2.1        tinytex_0.31      stringi_1.5.3     munsell_0.5.0    
+#> [45] crayon_1.4.1
 ```
 
-This document was processed on: 2021-05-04.
+This document was processed on: 2021-06-21.
 
