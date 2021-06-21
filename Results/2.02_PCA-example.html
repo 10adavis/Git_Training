@@ -11,7 +11,11 @@
 
 <meta name="author" content="Andrew Davis, PhD, Unilever Human Biology" />
 
+<<<<<<< HEAD
 <meta name="date" content="2021-06-21" />
+=======
+<meta name="date" content="2021-05-04" />
+>>>>>>> b2216b632858509c72dd2e0240f9588baaee3b3e
 
 <title>2.02_PCA-Example</title>
 
@@ -167,7 +171,11 @@ pre code {
 
 <h1 class="title toc-ignore">2.02_PCA-Example</h1>
 <h4 class="author">Andrew Davis, PhD, Unilever Human Biology</h4>
+<<<<<<< HEAD
 <h4 class="date">21 June 2021</h4>
+=======
+<h4 class="date">04 May 2021</h4>
+>>>>>>> b2216b632858509c72dd2e0240f9588baaee3b3e
 
 </div>
 
@@ -191,15 +199,20 @@ pre code {
 <div id="installload-dependencies" class="section level2">
 <h2>Install/Load dependencies</h2>
 <pre class="r"><code># Load dependencies:
+<<<<<<< HEAD
 library(ggfortify)
 #&gt; Warning: package &#39;ggfortify&#39; was built under R version 4.0.5
 #&gt; Warning: package &#39;ggplot2&#39; was built under R version 4.0.5</code></pre>
+=======
+library(ggfortify)</code></pre>
+>>>>>>> b2216b632858509c72dd2e0240f9588baaee3b3e
 </div>
 <div id="perform-principal-component-analysis" class="section level2">
 <h2>Perform Principal Component Analysis:</h2>
 <pre class="r"><code>mtcars.pca &lt;- prcomp(mtcars, center = TRUE,scale. = TRUE)
 summary(mtcars.pca)
 #&gt; Importance of components:
+<<<<<<< HEAD
 #&gt;                           PC1    PC2     PC3     PC4     PC5     PC6    PC7     PC8    PC9
 #&gt; Standard deviation     2.5707 1.6280 0.79196 0.51923 0.47271 0.46000 0.3678 0.35057 0.2776
 #&gt; Proportion of Variance 0.6008 0.2409 0.05702 0.02451 0.02031 0.01924 0.0123 0.01117 0.0070
@@ -214,11 +227,33 @@ summary(mtcars.pca)
 <pre class="r"><code>autoplot(mtcars.pca, data = mtcars, colour = &#39;cyl&#39;)
 #&gt; Warning: `select_()` was deprecated in dplyr 0.7.0.
 #&gt; Please use `select()` instead.</code></pre>
+=======
+#&gt;                           PC1    PC2     PC3     PC4     PC5
+#&gt; Standard deviation     2.5707 1.6280 0.79196 0.51923 0.47271
+#&gt; Proportion of Variance 0.6008 0.2409 0.05702 0.02451 0.02031
+#&gt; Cumulative Proportion  0.6008 0.8417 0.89873 0.92324 0.94356
+#&gt;                            PC6    PC7     PC8    PC9    PC10
+#&gt; Standard deviation     0.46000 0.3678 0.35057 0.2776 0.22811
+#&gt; Proportion of Variance 0.01924 0.0123 0.01117 0.0070 0.00473
+#&gt; Cumulative Proportion  0.96279 0.9751 0.98626 0.9933 0.99800
+#&gt;                          PC11
+#&gt; Standard deviation     0.1485
+#&gt; Proportion of Variance 0.0020
+#&gt; Cumulative Proportion  1.0000</code></pre>
+</div>
+<div id="plot-pca" class="section level2">
+<h2>Plot PCA:</h2>
+<pre class="r"><code>autoplot(mtcars.pca, data = mtcars, colour = &#39;cyl&#39;)</code></pre>
+>>>>>>> b2216b632858509c72dd2e0240f9588baaee3b3e
 <p><img src="data:image/png;base64,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" width="100%" /></p>
 </div>
 <div id="plot-pca-with-labeled-eigenvectors" class="section level2">
 <h2>Plot PCA with labeled eigenvectors</h2>
+<<<<<<< HEAD
 <pre class="r"><code>tiff(&quot;../Results/PCA_Eigenvectors.tiff&quot;)
+=======
+<pre class="r"><code>pdf(&quot;../Results/PCA_Eigenvectors.pdf&quot;)
+>>>>>>> b2216b632858509c72dd2e0240f9588baaee3b3e
 autoplot(mtcars.pca, data = mtcars, colour = &#39;cyl&#39;,
          loadings = TRUE, loadings.colour = &#39;blue&#39;,
          loadings.label = TRUE, loadings.label.size = 3)
@@ -235,11 +270,16 @@ autoplot(mtcars.pca, data = mtcars, colour = &#39;cyl&#39;,
 <pre class="r"><code>sessionInfo()
 #&gt; R version 4.0.4 (2021-02-15)
 #&gt; Platform: x86_64-w64-mingw32/x64 (64-bit)
+<<<<<<< HEAD
 #&gt; Running under: Windows 10 x64 (build 19042)
+=======
+#&gt; Running under: Windows 10 x64 (build 19041)
+>>>>>>> b2216b632858509c72dd2e0240f9588baaee3b3e
 #&gt; 
 #&gt; Matrix products: default
 #&gt; 
 #&gt; locale:
+<<<<<<< HEAD
 #&gt; [1] LC_COLLATE=English_United States.1252  LC_CTYPE=English_United States.1252   
 #&gt; [3] LC_MONETARY=English_United States.1252 LC_NUMERIC=C                          
 #&gt; [5] LC_TIME=English_United States.1252    
@@ -263,6 +303,39 @@ autoplot(mtcars.pca, data = mtcars, colour = &#39;cyl&#39;,
 #&gt; [37] renv_0.13.2       labeling_0.4.2    utf8_1.2.1        tinytex_0.31     
 #&gt; [41] stringi_1.5.3     munsell_0.5.0     crayon_1.4.1</code></pre>
 <p>This document was processed on: 2021-06-21.</p>
+=======
+#&gt; [1] LC_COLLATE=English_United States.1252 
+#&gt; [2] LC_CTYPE=English_United States.1252   
+#&gt; [3] LC_MONETARY=English_United States.1252
+#&gt; [4] LC_NUMERIC=C                          
+#&gt; [5] LC_TIME=English_United States.1252    
+#&gt; 
+#&gt; attached base packages:
+#&gt; [1] stats     graphics  grDevices datasets  utils     methods  
+#&gt; [7] base     
+#&gt; 
+#&gt; other attached packages:
+#&gt; [1] rmarkdown_2.7    here_1.0.1       ggfortify_0.4.11
+#&gt; [4] ggplot2_3.3.3    readxl_1.3.1    
+#&gt; 
+#&gt; loaded via a namespace (and not attached):
+#&gt;  [1] Rcpp_1.0.6        highr_0.9         cellranger_1.1.0 
+#&gt;  [4] pillar_1.6.0      compiler_4.0.4    tools_4.0.4      
+#&gt;  [7] digest_0.6.27     evaluate_0.14     lifecycle_1.0.0  
+#&gt; [10] tibble_3.1.1      gtable_0.3.0      pkgconfig_2.0.3  
+#&gt; [13] rlang_0.4.10      cli_2.5.0         yaml_2.2.1       
+#&gt; [16] xfun_0.22         gridExtra_2.3     withr_2.4.2      
+#&gt; [19] dplyr_1.0.5       stringr_1.4.0     knitr_1.33       
+#&gt; [22] generics_0.1.0    vctrs_0.3.8       rprojroot_2.0.2  
+#&gt; [25] grid_4.0.4        tidyselect_1.1.0  glue_1.4.2       
+#&gt; [28] R6_2.5.0          fansi_0.4.2       farver_2.1.0     
+#&gt; [31] tidyr_1.1.3       purrr_0.3.4       magrittr_2.0.1   
+#&gt; [34] scales_1.1.1      ellipsis_0.3.2    htmltools_0.5.1.1
+#&gt; [37] colorspace_2.0-0  renv_0.13.2       labeling_0.4.2   
+#&gt; [40] utf8_1.2.1        stringi_1.5.3     munsell_0.5.0    
+#&gt; [43] crayon_1.4.1</code></pre>
+<p>This document was processed on: 2021-05-04.</p>
+>>>>>>> b2216b632858509c72dd2e0240f9588baaee3b3e
 </div>
 </div>
 

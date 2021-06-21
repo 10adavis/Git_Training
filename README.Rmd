@@ -69,7 +69,7 @@ Running [99_Run_All.Rmd](R_scripts/99_Run_All.Rmd) will also render html files o
 #### Output:
 The resulting output files were saved to the [Results](Results) folder in this repository. 
 
-```{r, echo=FALSE}
+```{r echo=FALSE}
 list.files(path="Results")
 ```
 

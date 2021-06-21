@@ -25,7 +25,7 @@ write.table(helloworld,"../Results/Hello_World.txt",col.names = FALSE,row.names=
 ```
 
 ## Hello everyone!
-Git is really useful for Bioinformatics
+Git is really useful for Data Science
 
 ### Session information
 ```{r session_info_102}
